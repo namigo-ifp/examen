@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 960px;
+    background-image: url(../img/fons.jpg);
+    margin: 0 auto;
+}
+
+.cap {
+    height: 589px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 2rem;
+    display: inline-block;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.and {
+    color: grey;
+}
+
+.ani {
+    margin-top: -95px;
+}
+
+.cos {
+    height: 810px;
+}
+
+.cotxe {
+    width: 250px;
+    height: 240px;
+    margin: 20px 10px;
+    float: left;
+    opacity: 50%;
+    position: relative;
+    left: 75px;
+}
+
+.cotxe img {
+    width: 250px;
+}
+
+.cotxe:hover {
+    opacity: 100%;
+    animation: girar 0.3 linear;
+}
+
+@keyframes girar {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.titol {
+    width: 250px;
+    height: 40px;
+    background: white;
+    line-height: 2.5rem;
+    position: relative;
+    top: -4px;
+    font-size: 1rem;
+    color: grey;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.peu {
+    height: 220px;
+    background-image: url(../img/logo_carsandfilms.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 940px) {
+
+    body {
+        width: 940px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cap {
+        text-align: left;
+    }
+
+    h1 {
+        position: relative;
+        left: 100px;
+        top: 40px;
+    }
+
+    .ani img {
+        width: 600px;
+        position: relative;
+        top: 100px;
+    }
+
+    .cos {
+        height: 1400px;
+    }
+
+    .cotxe {
+        width: 250px;
+        height: 240px;
+        margin: 20px 100px;
+        float: left;
+        opacity: 50%;
+        position: relative;
+        left: 75px;
+    }
+    
+    .cotxe img {
+        width: 250px;
+    }
+
+    .peu {
+        height: 220px;
+        background-image: url(../img/logo_carsandfilms.png);
+        background-repeat: no-repeat;
+        background-position: 200px;
+    }    
+
+}
